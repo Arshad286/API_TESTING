@@ -27,6 +27,63 @@ The Citation Extraction API fetches data from a paginated API endpoint, identifi
 - Flask
 - Requests library
 
+## Create a virtual environment and activate it:
+- python -m venv venv
+- source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
+- 
+## install the required Python packages:
+
+- pip install Flask requests
+
+## Running the API
+- Ensure you're in the project root directory and activate your virtual environment.
+- Run the Flask server:
+- python app.py
+- The API will be available at http://127.0.0.1:5000/get_citations.
+
+## API Endpoints
+- GET /get_citations
+- Fetches data from the API endpoint and returns a list of citations.
+
+## Response Format
+Success (200 OK): Returns a JSON array of citations.
+Example response:
+
+json
+Copy code
+[
+  [
+    {
+      "id": "71",
+      "link": "https://orders.brikoven.com"
+    },
+    {
+      "id": "8",
+      "link": "https://www.brikoven.com/reservations"
+    }
+  ],
+  []
+]
+
+
+### Explanation
+
+- **Introduction**: Brief overview of what the API does.
+- **Features**: List of main features of the API.
+- **Requirements**: Dependencies required to run the project.
+- **Setup**: Step-by-step instructions to set up the project.
+- **Running the API**: Instructions to run the Flask server.
+- **API Endpoints**: Description of the available API endpoints and the response format.
+
+This `README.md` file should provide clear instructions on how to set up and run your Citation Extraction API project. Make sure to update the repository URL and other specific details as needed.
+
+
+
+
+
+
+
+
 ## Setup
 
 1. Clone the repository:
